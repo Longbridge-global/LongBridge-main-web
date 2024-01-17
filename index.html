@@ -40,10 +40,18 @@
       <div class="container clearfix">
         <div class="contact-info float-left">
           <i class="fa fa-envelope-o"></i>
-          <a href="mailto:connect@longbridgeglobal.com">connect@longbridgeglobal.com</a>
-          <i class="fa fa-phone"></i> <a href="tel:+917593096401">+91 7593096401</a>
+          <a href="mailto:connect@longbridgeglobal.com"
+            >connect@longbridgeglobal.com</a
+          >
+          <i class="fa fa-phone"></i>
+          <a href="tel:+917593096401">+91 7593096401</a>
         </div>
         <div class="social-links float-right">
+          <a
+            href="https://api.whatsapp.com/send?phone=918606484023&text=Hallo"
+            class="Whatsapp"
+            ><i class="fa fa-whatsapp"></i
+          ></a>
           <a
             href="https://twitter.com/i/flow/login?redirect_after_login=%2Flongbridgegloba"
             class="twitter"
@@ -112,7 +120,7 @@
           Visions <span>Into</span> Masterpiece!
         </h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="tel:+917593096401" class="btn-get-started scrollto">Call Us Now</a>
           <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
         </div>
       </div>
@@ -150,7 +158,7 @@
             </div>
 
             <div class="col-lg-6 content">
-              <h2>Elevate Your Business with Vertex Innovations</h2>
+              <h2>Elevate Your Business with LongBridge Global</h2>
               <h3>Redefining Success Through Strategic Excellence</h3>
 
               <ul>
@@ -180,6 +188,26 @@
       </section>
       <!-- #about -->
 
+      <!-- VIDEO SECTION -->
+      <section class="video-section">
+        <div class="youtube-video-container">
+          <img
+            src="/img/Video_tmp.jpg"
+            alt="Video placeholder"
+            class="video-placeholder"
+          />
+          <div class="play-button-container">
+            <img class="play-button" src="/img/Play.png" alt="" />
+          </div>
+          <iframe
+            id="youtube-iframe"
+            src="https://www.youtube.com/embed/ee5UHZYbca4?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0&showinfo=0"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
       <!--==========================
       Services Section
     ============================-->
@@ -188,7 +216,7 @@
           <div class="section-header">
             <h2>Services</h2>
             <p>
-              At Vertex, our comprehensive suite of consulting services is
+              At LongBridge, our comprehensive suite of consulting services is
               designed to empower businesses on their journey to success. We
               understand the unique challenges of today's dynamic landscape and
               offer strategic guidance, innovative solutions, and transformative
@@ -549,16 +577,19 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-9 text-center text-lg-left">
-              <h3 class="cta-title">Call To Action</h3>
+              <h3 class="cta-title">Latest Works</h3>
               <p class="cta-text">
-                Seize the moment! Elevate your business with LongBridge. Embrace
-                strategic excellence and transformative solutions. Let's embark
-                on a journey to success together. Contact us now – your path to
-                unparalleled growth begins here
+                Seize the moment and soar to new heights with LongBridge! Ignite
+                your business with a fusion of strategic excellence and
+                transformative solutions. Join us on an exhilarating journey to
+                success – together, we're not just making waves, we're creating
+                a tidal force of innovation. Elevate your vision, download our
+                Work Portfolio now, and witness the brilliance of our
+                latest projects!
               </p>
             </div>
             <div class="col-lg-3 cta-btn-container text-center">
-              <a class="cta-btn align-middle" href="#">Call To Action</a>
+              <a class="cta-btn align-middle" href="#">Download</a>
             </div>
           </div>
         </div>
@@ -645,9 +676,9 @@
           <div class="section-header">
             <h2>Contact Us</h2>
             <p>
-              Connect with us! Your success is our priority. Reach out to LongBridge
-              for expert guidance and transformative solutions. Let's shape your
-              path to success together. Contact us now!
+              Connect with us! Your success is our priority. Reach out to
+              LongBridge for expert guidance and transformative solutions. Let's
+              shape your path to success together. Contact us now!
             </p>
           </div>
 
@@ -665,6 +696,7 @@
                 <i class="ion-ios-telephone-outline"></i>
                 <h3>Phone Number</h3>
                 <p><a href="tel:+917593096401">+91 7593096401</a></p>
+                <p><a href="tel:+918606484023">+91 8606484023</a></p>
               </div>
             </div>
 
@@ -672,7 +704,11 @@
               <div class="contact-email">
                 <i class="ion-ios-email-outline"></i>
                 <h3>Email</h3>
-                <p><a href="mailto:info@example.com">connect@longbridgeglobal.com</a></p>
+                <p>
+                  <a href="mailto:info@example.com"
+                    >connect@longbridgeglobal.com</a
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -694,19 +730,19 @@
                     id="name"
                     placeholder="Your Name"
                     data-rule="minlen:4"
-                    data-msg="Please enter at least 4 chars"
+                    data-msg="Please enter at least 4 characters"
                   />
                   <div class="validation"></div>
                 </div>
                 <div class="form-group col-md-6">
                   <input
-                    type="email"
+                    type="tel"
                     class="form-control"
-                    name="email"
-                    id="email"
-                    placeholder="Your Email"
-                    data-rule="email"
-                    data-msg="Please enter a valid email"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone Number"
+                    data-rule="phone"
+                    data-msg="Please enter a valid phone number"
                   />
                   <div class="validation"></div>
                 </div>
@@ -719,7 +755,7 @@
                   id="subject"
                   placeholder="Subject"
                   data-rule="minlen:4"
-                  data-msg="Please enter at least 8 chars of subject"
+                  data-msg="Please enter at least 4 characters for the subject"
                 />
                 <div class="validation"></div>
               </div>
@@ -761,7 +797,7 @@
     </footer>
     <!-- #footer -->
 
-    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <a href="#" class="back-to-top"><i class="fa fa-whatsapp"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="lib/jquery/jquery.min.js"></script>
@@ -777,7 +813,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8HeI8o-c1NppZA-92oYlXakhDPYR7XMY"></script>
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
-
+    <script src="https://www.youtube.com/iframe_api"></script>
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
   </body>

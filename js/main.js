@@ -1,15 +1,22 @@
 jQuery(document).ready(function( $ ) {
 
   // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop() > 100) {
+  //     $('.back-to-top').fadeIn('slow');
+  //   } else {
+  //     $('.back-to-top').fadeOut('slow');
+  //   }
+  // });
   $('.back-to-top').click(function(){
-    $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+
+
+    // Construct the WhatsApp URL
+    var whatsappUrl = 'https://api.whatsapp.com/send?phone=918606484023&text=Hallo'
+
+    // Open the WhatsApp URL in a new tab or window
+    window.open(whatsappUrl, '_blank');
+
     return false;
   });
 
@@ -27,6 +34,10 @@ jQuery(document).ready(function( $ ) {
 
   // Initiate the wowjs animation library
   new WOW().init();
+
+
+  //nav hide 
+
 
   // Initiate superfish on nav menu
   $('.nav-menu').superfish({
@@ -145,6 +156,39 @@ jQuery(document).ready(function( $ ) {
     }
 
 
+});
+
+
+// pdf downloader 
+
+$(document).ready(function() {
+  // Attach a click event listener to the button
+  $('.cta-btn').on('click', function() {
+    // Create a dummy PDF file URL (replace with your actual PDF file path)
+    var pdfUrl = '/assets/longbridge.pdf';
+
+    // Create an invisible link element
+    var link = $('<a>', {
+      href: pdfUrl,
+      download: 'longbridge.pdf' // Specify the filename for download
+    });
+
+    // Append the link to the body
+    $('body').append(link);
+
+    // Trigger a click on the link to initiate the download
+    link[0].click();
+
+    // Remove the link from the document
+    link.remove();
+  });
+});
+
+$(document).ready(function() {
+  $('.play-button').click(function() {
+    $('.video-placeholder, .play-button-container').hide(); /* Hide image and button */
+    $('#youtube-iframe').css('opacity', 1).show(); /* Show video (opacity + display) */
+  });
 });
 
 
