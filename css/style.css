@@ -64,7 +64,7 @@ h6 {
     transform: translateY(0);
   }
   40% {
-    transform: translateY(-15px);
+    transform: translateY(-15px)int;
   }
   60% {
     transform: translateY(-10px);
@@ -377,19 +377,21 @@ h6 {
 }
 
 @media (max-width: 540px) {
-  #intro #intro-carousel .item:nth-child(1) {
+  /* Target all items correctly and set unique background images */
+  #intro-carousel .item:nth-child(1) {
     background-image: url('/img/Banner/MobBanner-01.jpg');
   }
-  #intro #intro-carousel .item:nth-child(1) {
+  #intro-carousel .item:nth-child(2) {
     background-image: url('/img/Banner/MobBanner-02.jpg');
   }
-  #intro #intro-carousel .item:nth-child(1) {
+  #intro-carousel .item:nth-child(3) {
     background-image: url('/img/Banner/MobBanner-03.jpg');
   }
-  #intro #intro-carousel .item:nth-child(1) {
+  #intro-carousel .item:nth-child(4) {
     background-image: url('/img/Banner/MobBanner-04.jpg');
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
